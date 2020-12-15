@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reservar</title>
+        <style type = "text/css">
+             body{background-color:rgb(255, 97, 5);}
+             h1{text-align:center;}
+             h2{padding-left:530px;}
+             .espaço{width:400px;}
+             .espaços{padding-left:500px;}
+             .palavras{
+                padding-left:420px;
+                margin-top:-208px;
+             }
+             .botão{
+                width:150px; 
+                height:30px;
+                color:red; 
+            }
+            .b1{
+                padding-left:80px;
+            }
+
+        </style>     
+    </head>
+
+    <body>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Próxima reserva: <a href = "{% url 'reservas' %}">Ver mais</a></h1>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Solicitar reserva</h1>
+        <form action="", method="POST">
+            {% csrf_token %}    
+            <div class = "espaços">   
+                {{ form.as_p }}
+                <div class = "b1">
+                    <input class = "botão" type="submit" value= "Enviar pedido">
+                </div>
+            </div>
+            
+    </body>
+</html>

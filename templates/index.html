@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Laboratório de Física</title>
+        <style type = "text/css">
+             body{background-color:rgb(255, 97, 5);}
+             h1{text-align:center;}
+             .st{padding-left:530px;}
+             h2{padding-left:530px;}
+             img{padding-left:600px;}
+             
+             
+
+             
+             
+             
+        
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Laboratório de Física</h1>
+        <br/>
+        <br/>
+        <br/>
+        <h2>Próxima reserva: <a href = "{% url 'reservas' %}">Ver mais</a></h2>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <a href = "{% url 'login' %}"><img src = "{% static 'img/login.png' %}"/></a>
+        <br/>
+        <a href = "{% url 'registrar' %}"><img src = "{% static 'img/registrar.png' %}"/></a>
+        
+
+    </body>
+</html>
